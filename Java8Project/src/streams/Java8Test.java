@@ -20,6 +20,14 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.io.*;
 
+ interface IVehicle {
+
+    void cleanVehicle();
+
+     default void startVehicle() {
+        System.out.println("Vehicle is starting");
+    }
+}
 interface IAbs{
     
 }

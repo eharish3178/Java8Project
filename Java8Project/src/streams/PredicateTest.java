@@ -64,7 +64,7 @@ public class PredicateTest {
 	System.out.println(equalPredicate.test("Welcome"));
 	
 	// ######################
-	BiPredicate<Person, Integer> biPredicate = ((p, minAge) -> {
+	BiPredicate<Person, Integer> biPredicate = ((p , minAge) -> {
 	    return (p.age > minAge);
 	});
 	System.out.println("biPredicate : " + isPersonEligibleForVoting(person, 18, biPredicate));
